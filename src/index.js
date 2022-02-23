@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import LocalStorageService from './services/LocalStorageService';
+
+const storageService = new LocalStorageService();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App 
+      storageService={storageService}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );

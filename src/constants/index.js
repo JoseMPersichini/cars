@@ -1,0 +1,2 @@
+export const URL_GOOGLE_API = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_KEY}&libraries=places&language=es`;
+export const MAPS_OPTIONS = {center: {lat: -32.94, lng: -60.70}, zoom: 11};
